@@ -1,11 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template, request
+
 
 app = Flask("My Flask Application")
 
 
 @app.route("/")
-def hello():
-    return "<h1>Hello World!</h1>"
+def renderIndexPage():
+    return render_template('index.html')
+    
+
 
 
 if __name__=="__main__":
