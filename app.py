@@ -12,7 +12,7 @@ def renderIndexPage():
 def renderimage_search():
     return render_template('image_search.html')
 
-@app.route("/advanced_search")
+@app.route("/advanced_search.html")
 def renderadvanced_search():
     return render_template('advanced_search.html')
 

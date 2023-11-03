@@ -7,11 +7,12 @@
 <!-- Load Babel Compiler -->
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-<body style="color: skyblue;align-items: center;text-align: center;font-size: x-large;font-family: Verdana, Geneva, Tahoma, sans-serif; background-color:black;">
-
-<div style="align-right;text-align:right"><a href="https://dorianrcolem-5500.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/danum-pythonflaskserver/templates/image_search.html" style="align-right;text-align:right;">Images</a></div>
-<div style="align-right;text-align:right;"><a href="https://dorianrcolem-5500.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/danum-pythonflaskserver/templates/advanced_search.html" style="text-align:right;align-right;color:red;">Advanced Search</a></div>
-  <title>Search-engine</title>
+<body style="color: skyblue;align-items: center;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; background-color:black;">
+<nav class="navbar" style="background-color:blue; border-radius:15px;">
+<div style="align-right;text-align:right"><a href="https://dorianrcolem-5500.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/danum-pythonflaskserver/templates/image_search.html" style="align-right;text-align:right;color:whitesmoke;"><h5>Images</h5></a></div>
+<div style="align-right;text-align:right;"><a href="https://dorianrcolem-5500.theiadocker-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/danum-pythonflaskserver/templates/advanced_search.html" style="text-align:right;align-right;color:whitesmoke"><h5>Advanced Search</h5></a></div>
+</nav>  
+<title>Search-engine</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <style>
   input{
@@ -33,9 +34,11 @@
     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
   <script></script>
+  <div style="padding:40px;">
   <form action="https://www.google.com/maps/">
     <Button type="submit" class="btn btn-primary" value="Google Navigation" style="border-radius:15px;background:blue;color:whitesmoke;">Google Navigation</button>
   </form>
+</div>
 <!--
 A container to display react DOM elements
 -->
@@ -87,7 +90,7 @@ input{
 
 
 <form style ="align-center"action="https://www.google.com/search">
-  <input style="border-radius:30px;background-color:black;color:white;text-align:center"  type="text" name="q" class="searchbar">
+  <input style="border-radius:30px;background-color:black;color:white;text-align:center;font-size:large;"  type="text" name="q" class="searchbar">
   <br><br>
   <button style="align-center;background-color:blue;color:white; font-size:large; border-radius:15px;" class="btn btn-primary" margin="30px" type="submit" value="Google Search" margin="30px" padding="80px">Google Search</button>
 </form>
@@ -111,7 +114,7 @@ input{
     </form>
 
     <div>
-        <a class="weatherwidget-io" href="https://forecast7.com/en/39d95n75d17/philadelphia/?unit=us" style="border-radius:30px;" data-label_1="PHILADELPHIA" data-label_2="WEATHER" data-theme="pure" >PHILADELPHIA WEATHER</a>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/39d95n75d17/philadelphia/?unit=us" style="border-radius:30px;" data-label_1="PHILADELPHIA" data-label_2="WEATHER" data-theme="dark" >PHILADELPHIA WEATHER</a>
         <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
         </script>
